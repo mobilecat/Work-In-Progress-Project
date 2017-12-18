@@ -1,0 +1,155 @@
+/* color palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* GLobal Styles
+-----------------*/
+html {
+   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+body {
+   font-family: "Open Sans", sans-serif;
+   margin: 0;
+   padding-top: 100px;
+}
+h1,
+h2 {
+   font-family: "Caveat", cursive;
+   font-weight: 400;
+   margin: 0;
+}
+h1 {
+   font-size: 80px;
+}
+h2 {
+   font-size: 40px;
+   margin: 10px
+            }
+h3 {
+   margin: 15px;
+}
+
+
+.content-wrap {
+   max-width: 950px;
+   margin: 0 auto;
+   padding: 60px 50px;
+   overflow: auto;
+}
+ .col-narrow {
+   width: 30%;
+   float: left;
+  }
+.col-wide {
+   width: 70%;
+   float: left;
+   padding-left: 20px;
+   }
+.uppercase {
+   text-transform: uppercase;
+}
+
+.reverse {
+   color: #edf2f4;
+}
+a {
+   color: #ef233c;
+}
+a:hover {
+   test-decoration: none;
+}
+header,footer {
+   background: #2b2d42;
+   color: #8D99AE;
+}
+header {
+   padding: 60px;
+   position: relative; 
+}
+.profile-img {
+   height: 300px; 
+   width: 300px;
+   border-radius: 50%;
+   
+}
+.download {
+   position: absolute;
+   bottom: 0;
+   right :0;
+}
+.button {
+   text-decoration: none;
+   background: #EF233C;
+   color: white;
+   padding: 10px;
+   display: inline-block;      
+}
+footer {
+   text-align: center;
+}
+.contact-info a {
+   padding: 10px;
+   display: inline-block;
+}
+/* Navigation
+-----------------*/
+nav {
+   text-alight:left;
+   background: white;
+   position: fixed;
+   top: 0;
+   left: 0%;
+   right: 0%;
+  }
+nav a {
+   display: inline-block;
+   padding: 15px 85px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 700;
+
+}
+
+/* Work 
+-----------------*/
+
+h3 ~ p {
+   margin: 0;
+   }
+
+/* Education
+-----------------*/
+.education {
+      background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+      url(https://s18.postimg.org/mmehnd87t/alfons-morales-410757.jpg) no-repeat fixed;
+      background-size: cover;
+     font-weight: 700;
+}
+
+/* Media Queries*/
+@media (min-width: 900px) {
+   .col-narrow {
+   width: 30%;
+   float: left;
+  }
+.col-wide {
+   width: 70%;
+   float: left;
+   padding-left: 20px;
+}
+
+@media (max-width: 899px) {
+   header {
+      text-align: center;
+   } 
+   .profile-img {
+      width: 200px;
+   }
